@@ -207,7 +207,7 @@
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
                     android:src="@android:drawable/ic_menu_gallery"
-                    android:background="@drawable/image_placeholder_background"/>
+                    android:background="@drawable/bg"/>
             </LinearLayout>
 
         </LinearLayout>

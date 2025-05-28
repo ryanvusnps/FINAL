@@ -24,11 +24,13 @@ public class StudentAdapter extends ArrayAdapter<Student> {
         TextView tvMSSV_mssv_0372 = convertView.findViewById(R.id.tvMSSV_mssv_0372);
         TextView tvName_mssv_0372 = convertView.findViewById(R.id.tvName_mssv_0372);
         TextView tvAvatar_mssv_0372 = convertView.findViewById(R.id.tvAvatar_mssv_0372);
-
+        TextView tvGroup_mssv_0372 = convertView.findViewById(R.id.tvGroup_mssv_0372);
+       
         if (student_mssv_0372 != null) {
-            tvMSSV_mssv_0372.setText(student_mssv_0372.getMssv());
+            tvMSSV_mssv_0372.setText("MSSV: " + student_mssv_0372.getMssv());
             tvName_mssv_0372.setText(student_mssv_0372.getName());
-            
+            tvGroup_mssv_0372.setText(student_mssv_0372.getGroupName());
+
             // Hiển thị chữ cái đầu của tên làm avatar
             String name = student_mssv_0372.getName();
             if (!name.isEmpty()) {
